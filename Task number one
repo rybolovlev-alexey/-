@@ -1,0 +1,12 @@
+for num in range(0, 1000):
+    x = num
+    S = x
+    R = 0
+    while x > 0:
+        d = x % 2
+        R = 10 * R + d
+        x = x // 2
+    S = R + S
+    if len(str(S)) == 5:
+        print(S, num)
+        break
